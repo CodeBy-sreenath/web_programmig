@@ -1,9 +1,11 @@
-#given a list that is obtained by rotrating a soreted list an unknown number of time we need to find the number(minimum)
-def cound_rotations(nums):
-    position=0
-    while position<len(nums):
-        if position>0 and nums[position]<nums[position-1]:
-            return position
-        position+=1
-    return 0
-print(cound_rotations([15,18,6,3,2,12]))    
+def lin(arr,key):
+    for i, v in enumerate(arr):
+        if v==key:
+            print("the value is found at index",i)
+    return -1
+arr=input("enter the numbers seperated by space").split()
+num=list(map(int,arr))
+key=int(input("enter the value to found"))
+lin(num,key)    
+    
+        
